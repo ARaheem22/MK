@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="head-t">
+        <img id="m-logo" src="off logo.png" alt="MK" width="336px">
+    </div>
+    <nav>
+        <a href="http://127.0.0.1:5500/.vscode/mortalkombat/characters/index.html">CHARACTERS</a>
+    </nav>
+    <div class="main-container">
+        <div class="first"><a href="#" onclick="sound2.play()"><img src="freeze.png" alt="Subzero" width="100px" id="farst"></a>
+
+            <p>Subzero</p>
+        </div>
+        <div><a href="http://127.0.0.1:5500/.vscode/mortalkombat/fightscene/index.html#"><button class="BTN" onmousedown="audio.play()"
+                >FIGHT</button></div></a>
+        <div class="second"><a href="#" onmousedown="sound1.play()"><img src="come-here.png" alt="scorpion" id="secnd"
+                    width="100px"></a>
+            <p>Scorpion</p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; rights reserved by Mortal Kombat</p>
+
+    </footer>
+
+</body>
+
+</html>
+<script type="text/javascript">
+    const audio = new Audio();
+    audio.src = "./sound effect.mp3";
+    var sound1 = new Audio();
+    sound1.src = "./scorpion-se.mp3";
+    var sound2 = new Audio();
+    sound2.src = "./subzero-se.mp3";
+</script>

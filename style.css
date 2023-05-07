@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.head-t {
+    background-color: black;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+#m-logo {
+    padding: 10px 0px 13px 3px;
+}
+nav{
+    padding: 10px;
+    background-color: rgb(17, 17, 17);
+    text-align: center;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    padding: 8px;
+    border-radius: 12px;
+
+}
+nav a:hover{
+    background-color: grey;
+    color: black;
+}
+.main-container {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(34, 33, 33);
+    height: 90vh;
+    align-items: center;
+    background-image:url(stage.png);
+    justify-content: center;
+}
+
+.first {
+    position: relative;
+    right: 15vw;
+    animation: first 5s linear 1s infinite normal;
+}
+
+.second {
+    position: relative;
+    left: 15vw;
+    animation: second 5s linear 1s infinite normal;
+
+}
+
+p {
+    text-align: center;
+    color: white;
+}
+
+.BTN {
+    width: 60px;
+    height: 40px;
+    color: white;
+    border-radius: 20px;
+    font-size: 12px;
+    cursor: pointer;
+    background: red;
+    border-color: yellow;
+}
+footer{
+    background-color: black;
+    color: white;
+    height: 20vh;
+    text-align: center;
+    position: relative;
+    justify-self: center;
+    align-items: center;
+}
+footer p{
+    top: 10px;
+}
+#farst:hover {
+    width: 300px;
+}
+#secnd:hover{
+    width: 300px;
+}
+
+@keyframes second {
+    0% {
+        left: 0;
+        top: 0;
+    }
+
+    50% {
+        left: 10%;
+        top: 0;
+    }
+
+    100% {
+        left: 0;
+        top: 0;
+    }
+}
+@keyframes first {
+    0% {
+        right: 0;
+        top: 0;
+    }
+
+    50% {
+        right: 10%;
+        top: 0;
+    }
+
+    100% {
+        right: 0;
+        top: 0;
+    }
+}
